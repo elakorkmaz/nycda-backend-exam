@@ -4,20 +4,23 @@ Given that we have a "customer" resource/model in our web server,
 
 # 1 - How would you design the routes of your server based on REST convention? List them with VERB and /route
 
-app.post('/users/register'      - create user
-app.get('/users/show'           - show user data
-app.put('/users/:id'            - edit user data
-app.delete('/users/delete'      - delete user
+app.post('/customers/register'      - create customer
+app.get('/customers/show'           - show customer data
+app.put('/customers/:id'            - edit customer data
+app.delete('/customers/delete'      - delete customer
 
 # 2 - Which pages would require templates, and how would you name them? List them with /route and template-name.extension
 
-register user:      /views/users/new.pug
-edit user:          /views/users/edit.pug
-show user data:     /views/users/show.pug
+register customer:      /views/customers/new.pug
+edit customer:          /views/customers/edit.pug
+show customer data:     /views/customers/show.pug
 
 # 3 - What is a database constraint? Name the 3 types of database constraints you have learned.
 
-A constraint for a column in a table in a database. allowNull, unique, foreign key.
+A constraint for a column in a table in a database.
+not null = doesn't allow a field to be left empty
+unique = data in field has to be unique in table
+foreign key = input is id of another table
 
 # 4 - What is a foreign key? Given that you have a Factory that has many cars and car that belongs to a factory, What would be your foreign key column?
 
@@ -27,10 +30,8 @@ connected to a single blog post. factoryId in the car table.
 
 # 5 - List all the model lifecycle hooks you have learned from sequelize and explain them briefly if necessary.
 
-Create - create the model / insert data
-Read - read data from the model
-Update - change/edit data in the model
-Destroy - delete the model
+beforeCreate beforeDestroy call a certain function before model is created/destroyed
+afterCreate afterDestroy
 
 # 6 - What is the difference between database-level validations and application-level validations?
 
