@@ -5,7 +5,7 @@ Explain the questions well!!
 ### 1- Why do we should include script tags at the very end of an html file, before closing </body>?
 
 So the static content is loaded before the dynamic content. This makes the page
-faster to load and makes sure it is displayed also when the js is not working.
+faster to load and makes sure it is displayed also when the js is not working properly.
 
 ### 2 - What is a middleware?
 
@@ -26,9 +26,8 @@ To read data posted by the client.
 
 ### 6 - What is the difference in terms of parsing a data received from a web form with POST or an AJAX POST request?
 
-With POST when data is sent to the database and then the page has to reload or
-redirected.
-With AJAX POST the data is sent while staying on the page.
+With POST data is sent to the database and then the page has to reload or
+redirected. With AJAX POST the data is sent while staying on the page.
 
 ### 7 - Why do we use methodOverride middleware ?
 
@@ -42,7 +41,7 @@ objects. Sessions are more secure than cookies.
 
 ### 9 - Why do we use a session middleware ?
 
-To store encrypted data during a session, for example when a user is logged in.
+To store data encrypted during a session, for example when a user is logged in.
 
 ### 10 - Why do we use a build process ?
 
