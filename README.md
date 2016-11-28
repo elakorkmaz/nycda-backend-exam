@@ -2,7 +2,7 @@
 =====================
 Explain the questions well!!
 
-### 1- Why do we should include script tags at the very end of an html file, before closing </body>?
+### 1- Why should we include script tags at the very end of an html file, before closing  ```</body>```?
 
 So the static content is loaded before the dynamic content. This makes the page
 faster to load.
@@ -23,10 +23,14 @@ The icon that is shown when someone bookmarks the site and is shown in the url b
 
 ### 5 - Why do we use a bodyParser middleware ?
 
+<<<<<<< HEAD
 To parse the body of data that is sent by the user on the client side so it can
 be 'read' by the server.
 
 ### 6 - What is the difference in terms of parsing a data received from a web form with POST or an AJAX POST request?
+=======
+### 6 - What is the difference between parsing a data received from a web form with POST and an AJAX POST request?
+>>>>>>> 80d83206a180f1ae39386af476c8c9ff4b8addb1
 
 I don't know.
 
